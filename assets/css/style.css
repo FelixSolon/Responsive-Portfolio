@@ -26,9 +26,23 @@ aside {
 	float: right;
 }
 
+/*
+You are pretty frequently going to see the !important tag on anything to do with .portfolioAside or #aside, basically because I screwed up and swapped
+them and haven't had time to fix them yet. Which also means I'm reusing the same id once on each page. Again, I know it's bad, but it technically 
+works and I'm a little lacking on time.
+*/
+
+.portfolioAside {
+	top: 130px !important;
+}
+
+.indexAside {
+	top: 30px !important;
+}
+
 body {
 	background-color: #fff;
-	width: 960px;
+/*	width: 960px;*/
 
 }
 
@@ -37,12 +51,13 @@ div {
 /*	border-width: 1px;
 	border-style: solid;
 	border-color: #000;*/
-	margin: 0 auto;
+	margin: auto;
 	position: relative;
 }
 
 header {
-	position: absolute;
+	position: relative;
+	margin: auto;
 	top: 0;
 	border-bottom-style: solid;
 	border-bottom-color: #ccc;
@@ -75,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-right: 30px;
 	position: absolute;
 	right: 10%;
-	top: 9%;
+	top: 130px;
 	background-color: #fff;
 	padding: 20px 10px;
 }
@@ -83,12 +98,13 @@ h1, h2, h3, h4, h5, h6 {
 .main {
 /*	background-color: #eee;*/
 	width: 980px;
-	height: 1500px;
+	height: auto;
 	position: relative;
 	background-image: url("../images/background.png");
 	background-position: right top;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	top: 0;
+	padding-bottom: 30px;
 }
 
 .content {
@@ -96,12 +112,18 @@ h1, h2, h3, h4, h5, h6 {
 	overflow: hidden;
 	background-color: #fff;
 	position: relative;
-	top: 9%;
+	top: 30px;
 	margin-left: 12.7%;
 	border-style: solid;
 	border-width: 1px;
 	border-color: #ddd;
 	padding: 5px;
+	margin-bottom: 30px;
+}
+
+#portfolioBox {
+	top: 30px;
+	padding: 0 0 0 20px;
 }
 
 .navBar {
@@ -190,7 +212,7 @@ a {
 }
 
 footer {
-	position: fixed;
+	position: relative;
 	bottom: 0;
 	max-width: 980px;
 	width: 100%;
@@ -201,13 +223,12 @@ footer {
 	border-color: #4aaaa5;
 	border-width: 10px 0 0 0;
 	z-index: 2;
+	margin: auto;
+
 }
 
 #footer {
-	color: #fff;
-	/*I disagree with this, as it's impossible to read the copyright.
-	However, as I'm supposed to use this color for "all text besides the headings"
-	(which are teal anyhow) I did this color*/
+	color: #ddd;
 	width: 100%;
 }
 
@@ -309,7 +330,7 @@ footer {
 @media screen and (max-width: 980px) {
 	.main {
 		width: 980px;
-		height: 1400px;
+		height: 700px	;
 	}
 
 	.header {
@@ -324,6 +345,7 @@ footer {
 
 	#portfolioMain {
 		top: 0;
+		height: auto;
 	}
 
 	#portfolioContent {
@@ -334,14 +356,15 @@ footer {
 	}
 	
 	#portfolioBox {
-		top: 120px;
+		top: 30px;
 		width: 33.5%;
 		margin-right: 0;
+		padding-left: 0px;
 	}
 
 	.portfolioAside {
-		margin-top: 6%;
 		padding-left: 0;
+		margin-left: 0;
 	}
 	
 	figcaption {
@@ -350,6 +373,8 @@ footer {
 
 	footer {
 		z-index: 30;
+		position: relative;
+		margin: auto;
 	}
 	
 	.portfolioImage {
@@ -359,15 +384,19 @@ footer {
 
 	.content {
 		position: relative;
-		top: 9%;
+		top: 30px;
+		left: 3px;
 	}
 
 	#aside {
-		top: 9%;
+		top: 130px;
+		right: 10%;
 	}
 
 	header {
 		background-color: #fff;
+		margin: auto;
+		position: relative;
 	}
 
 }
@@ -385,6 +414,7 @@ footer {
 
 	footer {
 		width: 768px;
+		top: 0px;
 	}
 
 	.content {
@@ -429,6 +459,7 @@ footer {
 	
 	.main {
 		top: 0;
+		height: 900px;
 	}
 
 	#nameText {
@@ -483,6 +514,12 @@ footer {
 		padding-left: 10px;
 	}
 
+	#footer {
+		margin-top: 20px;
+		padding: 0;
+		position: relative;
+	}
+
 }
 
 @media screen and (max-width: 640px) {
@@ -517,9 +554,9 @@ footer {
 
 	#aside {
 		width: 93.3%;
-		left: 1.4%;
+		left: 1.9%;
 		position: relative;
-		top: 2%;
+		top: 4%;
 		clear: both;
 		margin-left: 0x;
 	}
