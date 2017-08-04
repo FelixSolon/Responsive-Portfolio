@@ -1,0 +1,631 @@
+/*In a perfect world, I'd probably
+split this out into a few different CSS
+files to make it easier to manage.
+Probably into different folders for page-
+specific styles, like for the form, and
+break it down into IDs, classes, and element
+especially once a site gets larger. I'm sorta
+out of time though :-( */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+	margin: -10px;
+}
+
+article {
+	float: left;
+/*	border-top-style: solid;
+	border-top-color: #000;
+	border-top-width: 2px;*/
+
+}
+
+aside {
+	width: 270px;
+	text-align: center;
+/*	border-width: 1px;
+	border-style: solid;
+	border-color: #000;*/
+	position: relative;
+	float: right;
+}
+
+body {
+	background-color: #fff;
+	width: 960px;
+
+}
+
+div {
+/* 	width: 650px; */
+/*	border-width: 1px;
+	border-style: solid;
+	border-color: #000;*/
+	margin: 0 auto;
+	position: relative;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	border-bottom-style: solid;
+	border-bottom-color: #ccc;
+	border-bottom-width: 2px;
+	width: 980px;
+	height: 100px;
+	z-index: 1;
+	background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;.
+}
+
+#aboutMe {
+	margin-left: 30px;
+	width: 90%;
+	float: left;
+	padding-bottom: 30px;
+}
+
+#aside {
+	z-index: 1;
+	float: right;
+	border-style: solid;
+	border-color: #ddd;
+	border-width: 1px;
+	height: auto;
+	margin-right: 30px;
+	position: absolute;
+	right: 10%;
+	top: 9%;
+	background-color: #fff;
+	padding: 20px 10px;
+}
+
+.main {
+/*	background-color: #eee;*/
+	width: 980px;
+	height: 1500px;
+	position: relative;
+	background-image: url("../images/background.png");
+	background-position: right top;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	top: 0;
+}
+
+.content {
+	width: 43%;
+	overflow: hidden;
+	background-color: #fff;
+	position: relative;
+	top: 9%;
+	margin-left: 12.7%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ddd;
+	padding: 5px;
+}
+
+.navBar {
+	float: left;
+	text-align: center;
+	position: relative;
+	padding: 15px 30px;
+	left: 20%;
+	font-size: 17px;
+	font-weight: bold;
+	top: 20px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+p.navLink {
+	display: inline;
+	top: 20px;
+	position: relative;
+
+}
+
+.nameBlock {
+	float: left;
+	width: 25.5%;
+	background-color: #4aaaa5;
+	color: #fff;
+	margin-left: 13%;
+	text-align: center;
+	color: #aaa;
+	position: relative;
+	left: 0;
+	top: 0;
+	clear: right;
+	line-height: 3em;
+	height: 100%;
+}
+
+#nameText {
+	color: #fff;
+}
+
+a {
+	color: #777;
+	text-decoration: none;
+}
+
+#connect {
+	border-style: solid;
+	border-color: #ddd;
+	border-width: 0 0 2px 0;
+	width: 90%;
+	padding: 15px 0;
+}
+
+#aboutMeBorder {
+	border-style: solid;
+	border-color: #ddd;
+	border-width: 0 0 3px 0;
+	margin-bottom: 30px;
+}
+
+.portfolioDiv {
+	height: 180px;
+	float: left;
+	margin: 10px;
+}
+
+.portfolioText {
+	position: absolute;
+	left: 0px;
+	top: 11px;
+	background-color: #4aaaa5;
+	z-index: 1;
+	width: 233px;
+	height: 50px;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	padding: 14px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+.portfolioImage {
+	height: 175px;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #666;
+	text-align: center;
+	padding: 20px;
+	border-style: solid;
+	border-color: #4aaaa5;
+	border-width: 10px 0 0 0;
+}
+
+#footer {
+	color: #fff;
+	/*I disagree with this, as it's impossible to read the copyright.
+	However, as I'm supposed to use this color for "all text besides the headings"
+	(which are teal anyhow) I did this color*/
+	width: 100%;
+}
+
+#portfolio {
+	border-style: solid;
+	border-color: #ddd;
+	border-width: 0 1px;
+	padding: 0px 15px;
+}
+
+.edgeLink {
+	margin: 0 15px;
+}
+
+#connectWithMe {
+	width: 120%;
+	position: relative;
+	right: 10%;
+	margin-top: 5px;
+	}
+
+.icon {
+	height: 50px;
+	width: 50px;
+	align-content: center;
+	margin: 10px;
+}
+
+#headshot {
+	float: left;
+	display: inline;
+	margin: 0 20px 20px 0;
+	position: relative;
+	height: 150px;
+
+}
+
+.test {
+	float: left;	
+}
+	
+.aboutText {
+	display: inline;
+	vertical-align: text-top;
+	overflow: hidden;
+	position: relative;
+}
+
+#nameForm {
+	width: 100%;
+	height: 2rem;
+	border-color: #ddd;
+	border-style: solid;
+	border-width: 1px;
+	/*Is it bad to mix RGBA and hex codes? I just wanted to use transparency rather than fiddle to figure out exactly what hex value I need*/
+	color: rgba(50,50,50,0.3);
+}
+
+#emailForm {
+	width: 100%;
+	height: 2rem;
+	border-color: #ddd;
+	border-style: solid;
+	border-width: 1px;
+	color: rgba(50,50,50,0.3);
+}
+
+#messageForm {
+	height: 150px;
+	width: 100%;
+	border-color: #ddd;
+	border-style: solid;
+	border-width: 1px;
+	color: rgba(50,50,50,0.3);
+}
+
+.formTitle {
+	color: #777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;;
+	font-weight: 500;
+	line-height: .25rem;
+	font-size: 18px;
+	
+}
+
+#submitButton {
+	background-color: #4aaaa5;
+	border-width: 0;
+	padding: 10px 30px;
+	color: #fff;
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+#portfolioHeader {
+	top: 0;
+}
+
+@media screen and (max-width: 980px) {
+	.main {
+		width: 980px;
+		height: 1400px;
+	}
+
+	.header {
+		width: 100%;
+		top: 0;
+
+	}
+
+	#portfolioHeader {
+		top: 0;
+	}
+
+	#portfolioMain {
+		top: 0;
+	}
+
+	#portfolioContent {
+		margin-left: 30px;
+		width: 90%;
+		float: left;
+		padding-bottom: 30px;
+	}
+	
+	#portfolioBox {
+		top: 120px;
+		width: 33.5%;
+		margin-right: 0;
+	}
+
+	.portfolioAside {
+		margin-top: 6%;
+		padding-left: 0;
+	}
+	
+	figcaption {
+		margin-top: 100px;
+	}
+
+	footer {
+		z-index: 30;
+	}
+	
+	.portfolioImage {
+		margin: auto;
+		width: auto;
+	}
+
+	.content {
+		position: relative;
+		top: 9%;
+	}
+
+	#aside {
+		top: 9%;
+	}
+
+	header {
+		background-color: #fff;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.main {
+		width: 768px;
+		margin-left: 0;
+	}
+
+	.header{
+		width: 768px;
+		margin-left: 0;
+	}
+
+	footer {
+		width: 768px;
+	}
+
+	.content {
+		width: 93%;
+		margin: auto;
+		position: relative;
+		top: 2%;
+	}
+
+	#aside {
+		width: 95%;
+		left: 2.4%;
+		top: 5%;
+		position: relative;
+	}
+
+	#connectWithMe {
+		float: left
+		margin: 0;
+		right: 45%;
+	}
+
+	#connect {
+		width: 95%;
+	}
+	
+	#icons {
+		float: left;
+		left: 1%;
+		margin-top: 1%;
+	}
+	
+	.nameBlock {
+		margin-left: 26px;
+	}
+
+	header {
+		width: 768px;
+		position: relative;
+		/* margin-bottom: -90px; */
+	}
+	
+	.main {
+		top: 0;
+	}
+
+	#nameText {
+		font-size: 28px;
+		margin-top: 25px;
+	}
+
+	.navLink {
+		left: 50px;
+
+	}
+	
+	#portfolioBox {
+		margin: 0 0 0 30px;
+		width: 85.9%;
+		top: 30px;
+		padding: 10px;
+	}
+
+	#portfolioConnect, #contactConnect {
+		text-align: left;
+		margin-top: 0;
+	}
+
+	#portfolioContent {
+		margin-left: 33px;
+	}
+
+	.portfolioAside {
+		margin-top: 0;
+		/*The following happened because I screwed up and swapped my class and id for the aside on the portfolio, and I haven't had time to fix it.
+		This should be #portfolioAside and the #aside should be .aside but it'll break several things to fix it right now, and I still need to 
+		work on the Bootstrap portfolio. */
+		left: 23px !important;
+	}
+
+	.portfolioImage {
+		float: left;
+		padding-left: 0;
+		height: 200px;
+	}
+	.portfolioDiv {
+		margin: 20px 10px;
+	}
+
+	.portfolioText {
+		width: 100%;
+		margin-top: 120px;
+	}
+
+	#aboutMeBorder {
+		padding-left: 10px;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+	.main {
+		width: 640px;
+		margin-left: 0;
+	}
+
+	.body {
+		position: relative;
+		z-index: -1000;
+	}
+
+	.container {
+		z-index: 1;
+	}
+	
+	.header{
+		width: 640px;
+		margin-left: 0;
+	}
+
+	footer {
+		width: 640px;
+	}
+
+	.content {
+		width: 93%;
+		padding-top: 0;
+		top: 15px;
+	}
+
+	#aside {
+		width: 93.3%;
+		left: 1.4%;
+		position: relative;
+		top: 2%;
+		clear: both;
+		margin-left: 0x;
+	}
+
+	#connectWithMe {
+		float: left
+		margin-left: 20px;
+
+	}
+
+	#connect {
+		width: 90%;
+		padding: 0 0 0 30px;
+	}
+	
+	#icons {
+		float: left;
+		left: 1%;
+		margin-top: 1%;
+	}
+	
+	.nameBlock {
+		margin-left: 0;
+		width: 100%;
+		clear: right;
+	}
+
+	header {
+		width: 640px;
+		position: relative;
+		/* margin-bottom: -90px; */
+	}
+	
+	.main {
+			position: relative;
+
+	}
+
+	#nameText {
+		font-size: 28px;
+		margin-top: 25px;
+	}
+	
+	.navBar {
+		top: 10px;
+		width: 100%;
+		position: static;
+		z-index: 500;
+		background-color: #fff;
+		clear: both;
+		padding-left: 0;
+	}
+
+	.navLink {
+		left: 50px;
+		z-index: 50;
+		padding: 5px;
+		width: 640px;
+		display: block;
+	}
+	
+	#portfolio {
+		padding: 0 40px;
+	}
+
+	.edgeLink {
+		padding: 0 40px;
+		width: 150px;
+	}
+	
+	.portfolioDiv {
+		height: auto;
+		width: 111%;
+		margin: 10px 0;
+		position: relative;	
+		float: left;
+	}
+
+	.portfolioImage {
+		height: auto;
+		width: 100%;
+	}
+
+	figcaption {
+		position: relative;
+		bottom: 0;
+	}
+
+	.portfolioText {
+		margin-top: 320px;
+	}
+
+	#portfolioMain {
+		height: 2900px;
+	}
+
+	.portfolioAside {
+		width: 563px !important;
+		left: -17px !important;
+	}
+
+}
